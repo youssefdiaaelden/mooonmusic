@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Register a new user</title>
+	</head>
+	<body>
+        <div class="Register">
+    
+    <form class="regform" id="regForm" style="display:block;">
+    	<p class="sign" align="center">Register</p>
+      <input class="un" type="text" id="newUsername" align="center" placeholder="Username">
+      <input class="pass" type="password" id="newPassword" align="center" placeholder="Password">
+      <button type="button" onclick="registerUser()" class="submit">Register</button>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+      </a>
+  </form>
+
+   
+    <form class="loginform" id="loginForm" style="display:none;">
+    	 <p class="sign" align="center">Sign in</p>
+      <input class="un " type="text" align="center" placeholder="Username" id="username">
+      <input class="pass" type="password" id="password" align="center" placeholder="Password">
+      <button type="button" onclick="login()" class="submit">Login</button>
+      <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+      </a>
+</form>
+            
+                
+    </div>
+
+		<script src="E:\proramming\web development\UDACITY\Dong lyrics\main.js"></script>
+	
+
+	</body>
+
+	<style>
+
+		.social{	
+			text-align: center;
+			display: inline;
+			
+		}
+		.facebook{
+			margin-left: 40%;
+			float: left;
+		}
+		.instagram{
+			float: right;
+			margin-right: ;
+		}
+		.youtube{
+			display: inline ;
+			position: fixed;
+		}
+
+
+		body {
+            background-image: url('https://images.unsplash.com/photo-1555475660-3df469f5d6d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+			background-repeat:none ;
+	        height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+            font-family: 'Ubuntu', sans-serif;
+	    }
+	    
+	    .Register {
+	        background-color: #FFFFFF;
+	        width: 400px;
+	        height: 400px;
+	        margin: 7em auto;
+	        border-radius: 1.5em;
+	        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	    }
+	    .sign {
+	        /*padding-top: 10px;*/
+	        padding-bottom: 20px;
+	        color: #8C55AA;
+	        font-family: 'Ubuntu', sans-serif;
+	        font-weight: bold;
+	        font-size: 23px;
+	    }
+	    .un {
+	    width: 76%;
+	    color: rgb(38, 50, 56);
+	    font-weight: 700;
+	    font-size: 14px;
+	    letter-spacing: 1px;
+	    background: rgba(136, 126, 126, 0.04);
+	    padding: 10px 20px;
+	    border: none;
+	    border-radius: 20px;
+	    outline: none;
+	    box-sizing: border-box;
+	    border: 2px solid rgba(0, 0, 0, 0.02);
+	    margin-bottom: 50px;
+	    margin-left: 46px;
+	    text-align: center;
+	    margin-bottom: 27px;
+	    font-family: 'Ubuntu', sans-serif;
+	    }
+	    
+	    form.regform {
+	        padding-top: 30px;
+	    }
+	    form.loginform {
+	        padding-top: 30px;
+	    }
+	    
+	    .pass {
+	            width: 76%;
+	    color: rgb(38, 50, 56);
+	    font-weight: 700;
+	    font-size: 14px;
+	    letter-spacing: 1px;
+	    background: rgba(136, 126, 126, 0.04);
+	    padding: 10px 20px;
+	    border: none;
+	    border-radius: 20px;
+	    outline: none;
+	    box-sizing: border-box;
+	    border: 2px solid rgba(0, 0, 0, 0.02);
+	    margin-bottom: 50px;
+	    margin-left: 46px;
+	    text-align: center;
+	    margin-bottom: 27px;
+	    font-family: 'Ubuntu', sans-serif;
+	    }
+	    
+	   
+	    .un:focus, .pass:focus {
+	        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+	        
+	    }
+	    .submit {
+	      cursor: pointer;
+	        border-radius: 5em;
+	        color: #fff;
+	        background: linear-gradient(to right, #9C27B0, #E040FB);
+	        border: 0;
+	        padding-left: 40px;
+	        padding-right: 40px;
+	        padding-bottom: 10px;
+	        padding-top: 10px;
+	        font-family: 'Ubuntu', sans-serif;
+	        margin-left: 35%;
+	        font-size: 13px;
+	        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+	    }
+	    
+	    .forgot {
+	        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	        color: #E1BEE7;
+	        padding-top: 15px;
+	    }
+	    
+	    a {
+	        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	        color: #E1BEE7;
+	        text-decoration: none
+	    }
+	    
+	    @media (max-width: 600px) {
+	        .main {
+	            border-radius: 0px;
+	        }
+	</style>
+</html>
